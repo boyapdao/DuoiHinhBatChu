@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DapAnAdapter extends ArrayAdapter<String> {
+    
     private Context myCt;
     private ArrayList<String> arr;
     public DapAnAdapter(@NonNull Context context, int resource, @NonNull List<String> objects) {
