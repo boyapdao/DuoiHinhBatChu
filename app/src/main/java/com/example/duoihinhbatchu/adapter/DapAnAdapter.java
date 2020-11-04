@@ -34,7 +34,6 @@ public class DapAnAdapter extends ArrayAdapter<String> {
         }
         TextView txvCauTraLoi=convertView.findViewById(R.id.txvCauTraLoi);
         txvCauTraLoi.setText(this.arr.get(position));
-
         return convertView;
     }
 }

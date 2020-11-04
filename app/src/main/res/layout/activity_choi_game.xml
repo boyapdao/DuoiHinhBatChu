@@ -9,17 +9,32 @@
     tools:context=".ChoiGameActivity">
 
     <RelativeLayout
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="50dp">
-
+        <TextView
+            android:id="@+id/tv_tienNguoiDung"
+            android:text="10"
+            android:background="@drawable/bg_tien"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:minWidth="100dp"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"/>
     </RelativeLayout>
     <RelativeLayout
 
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="300dp">
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/img_anhCauDo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:scaleType="fitCenter"
             android:src="@drawable/test_cauhoi"/>
     </RelativeLayout>
@@ -41,10 +56,39 @@
 
         <GridView
             android:id="@+id/gdvDapAn"
+            android:layout_marginBottom="60dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"/>
 
+        <LinearLayout
+
+            android:layout_alignParentBottom="true"
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <Button
+
+                android:text="Gợi ý"
+                android:background="@drawable/bg_tien"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp" />
+            <Button
+                android:text="Đổi câu hỏi"
+                android:background="@drawable/bg_tien"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp" />
+        </LinearLayout>
     </RelativeLayout>
 
 </LinearLayout>
