@@ -1,7 +1,7 @@
 package com.example.duoihinhbatchu.object;
 
 public class CauDo {
-    private String ten, dapAn, anh;
+    private String ten, dapAn, anh, level;
 
     public CauDo(){ }
 

@@ -4,22 +4,176 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/nen_app_6"
+    android:background="@drawable/nenapp3d"
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:src="@drawable/logo_app"
+        android:src="@drawable/logo_3"
         android:layout_centerHorizontal="true"/>
+
     <Button
         android:id="@+id/btn_Choi"
-        android:layout_width="250dp"
+        android:layout_width="210dp"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Chơi"
+        android:padding="20dp"
+        android:background="@drawable/bg_choigame"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="70dp"
+        android:text="Chơi Ngay"
+        android:textStyle="bold"
         android:textSize="30dp"/>
+    <Button
+        android:id="@+id/btn_BangXepHang"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:background="@drawable/bg_choigame"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_Choi"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:text="Bảng Xếp Hạng"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:maxLines="1"/>
+    <Button
+        android:id="@+id/btn_KiemRuby"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:background="@drawable/bg_choigame"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_BangXepHang"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:text="Kiếm Ruby"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:maxLines="1"/>
+    <LinearLayout
+        android:id="@+id/ln_sound"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/ln_hoidap"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_sound"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/sound_on"/>
+        <TextView
+            android:id="@+id/tv_Sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="#fff"
+            android:text="Sound On"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ln_hoidap"
+        android:layout_toLeftOf="@id/ln_luatchoi"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_question"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/question"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:text="hỏi đáp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ln_luatchoi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_luatchoi"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/luat_choi"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:text="Luật Chơi"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ln_rate"
+        android:layout_toRightOf="@id/ln_luatchoi"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_rate"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/rate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="#fff"
+            android:text="Đánh Giá"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ln_share"
+        android:layout_toRightOf="@id/ln_rate"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_share"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/share_button"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:text="Chia Sẻ"/>
+    </LinearLayout>
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/ic_play_200"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_centerVertical="true"/>-->
 
 
 </RelativeLayout>
