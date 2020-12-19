@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1030650640689",
+    "project_id": "duoihinhbatchu-4b0ac",
+    "storage_bucket": "duoihinhbatchu-4b0ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030650640689:android:aec50b74a4321568d1d810",
+        "android_client_info": {
+          "package_name": "com.example.duoihinhbatchu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030650640689-gd0437jmloc9jleivlmrptipi0vo7p1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK1dX19aqEGVwN2TkkyDe7iT0N4Sflhqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030650640689-gd0437jmloc9jleivlmrptipi0vo7p1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

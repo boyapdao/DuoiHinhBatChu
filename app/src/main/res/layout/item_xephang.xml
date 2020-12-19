@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_itemRank"
+    android:layout_width="match_parent"
+    android:background="#00BCD4"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_Rank"
+        android:layout_margin="5dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/rank1"/>
+    <TextView
+        android:id="@+id/tv_Rank"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="4"
+        android:textSize="25dp"/>
+
+    <ImageView
+        android:id="@+id/img_NguoiChoi"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#fff"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/img_Rank"/>
+    <TextView
+        android:id="@+id/tv_TenNC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#656563"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/img_NguoiChoi"
+        android:layout_centerVertical="true"
+        android:text="Tươi tốt"/>
+    <TextView
+        android:id="@+id/tv_ThanhTichNC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="711"/>
+
+</RelativeLayout>
